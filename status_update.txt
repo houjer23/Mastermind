@@ -1,0 +1,3 @@
+Jan 24
+
+Today, I almost completed the game. I finished the user input part, checking how much the user guessed right, and the print board method. I still need fix some bug in the print board method. Other than that, the game is almost done. Next time, I need to fix some bugs, add some comments, and add more features to the game.
