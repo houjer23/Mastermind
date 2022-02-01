@@ -63,24 +63,26 @@ public class Mastermind {
 		//System.out.println(answer[0] + " " + answer[1] + " " + answer[2] + " " + answer[3]);
 		//System.out.println(guess_result);
 		for (int i = 0; i < board.size(); i ++) { // track all the turns
+			System.out.print("--------------------\n ");
 			for (int j = 0; j < 4; j ++) { // prints the user input
 				System.out.print(board.get(i).get(j) + " ");
 			}
-			System.out.print("   ");
+			System.out.print("  |  ");
 			if (guess_result.get(i).size() <= 2) { // if the the result is less than or equal to 2, print only one line
 				for (int j = 0; j < guess_result.get(i).size(); j ++) {
 					System.out.print(guess_result.get(i).get(j) + " ");
 				}
-				System.out.println();
+				System.out.println("");
 			} else { // if the the result is more than 2, print two lines
 				System.out.println(guess_result.get(i).get(0) + " " + guess_result.get(i).get(1)); // first line
-				System.out.print("           ");
+				System.out.print("           |  ");
 				for (int j = 2; j < guess_result.get(i).size(); j ++) { // second line
 					System.out.print(guess_result.get(i).get(j) + " ");
 				}
-				System.out.println();
+				System.out.println("");
 			}
 		} // end of the for loop looping through all the numbers
+		System.out.println("--------------------");
 		System.out.println("\n1 represents there is a number in the answer,");
 		System.out.println("2 represents there is a number in the correct position");
 		System.out.println();
