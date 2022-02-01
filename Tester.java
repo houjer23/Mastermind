@@ -1,7 +1,14 @@
+/**
+* This class gather user input and run Mastermind
+*
+* @author Jerry Hou
+* @since 1.0
+*/
+
+// import all the necessary classes
 import java.util.Scanner;
 import java.util.ArrayList;
 
-// Tester class, gather user input and run Mastermind
 public class Tester {
 	public static void main(String[] args) { // start of public static void main
 		Scanner sc = new Scanner(System.in); // Scanner class
@@ -21,6 +28,10 @@ public class Tester {
 			// pass the user input to the Mastermind class
 			// Mastermind will check if the user input are right and print the board
 			if (m.check_correct(user_choice)) {
+				/* 
+				 * if the user gets the correct answer
+				 * stop the game
+				 */
 				break;
 			}
 		} // end of while loop
