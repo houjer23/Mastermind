@@ -65,6 +65,15 @@ public class Mastermind {
 			System.out.println("You Win!!!");
 			return true;
 		}
+		if (guess_time == 12) {
+			System.out.println("\nYou have guessed 12 times");
+			System.out.println("You Lost!!!");
+			System.out.print("Answer: ");
+			for (int j = 0; j < 4; j ++) {
+				System.out.print(answer[j] + " ");
+			}
+			return true;
+		}
 		return false;
 	} // end of check_correct method
 	
