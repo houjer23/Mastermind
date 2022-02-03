@@ -1,3 +1,12 @@
+/**
+* This class takes user input and check if they are right or not, also print the board
+*
+* @author Jerry Hou
+* @return if the game is finished or not
+* @since 1.0
+*/
+
+// import needed classes
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -53,13 +62,14 @@ public class Mastermind {
 		printBoard(); // call print board method
 		if (num_got == 4) { // if all the inputs are correct, stops
 			System.out.println("\nYou finished in " + guess_time + " times");
+			System.out.println("You Win!!!");
 			return true;
 		}
 		return false;
 	} // end of check_correct method
 	
 	public void printBoard() { // print board method: prints the board
-		System.out.println();
+		System.out.println("\nTHE BOARD");
 		//System.out.println(answer[0] + " " + answer[1] + " " + answer[2] + " " + answer[3]);
 		//System.out.println(guess_result);
 		for (int i = 0; i < board.size(); i ++) { // track all the turns
@@ -81,10 +91,10 @@ public class Mastermind {
 				}
 				System.out.println("");
 			}
-		} // end of the for loop looping through all the numbers
+		} // end of the for loop looping through all the turns
 		System.out.println("--------------------");
-		System.out.println("\n1 represents there is a number in the answer,");
-		System.out.println("2 represents there is a number in the correct position");
+		System.out.println("\n1 represents a color in the answer but not in the correct location");
+		System.out.println("2 represents there is a color in the correct position");
 		System.out.println();
 		
 	} // end of print board method
