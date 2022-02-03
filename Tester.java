@@ -12,7 +12,22 @@ import java.util.ArrayList;
 public class Tester {
 	public static void main(String[] args) { // start of public static void main
 		Scanner sc = new Scanner(System.in); // Scanner class
+		// direction for the game...
+		System.out.println("\nWelcome to Mastermind!");
+		System.out.println("The computer will randomly generate one combanation of six numbers without repeating colors.");
+		System.out.println("You have to guess that combanation.");
+		System.out.println("After your each guess,");
+		System.out.println("you will get a hint of how many of your inputs are in the right location");
+		System.out.println("and how many of them are not in the right location but in the answer.");
+		System.out.println("With these clues, you can get the answer without taking forever.");
+		System.out.println("ENJOY YOUR GAME\n");
+		System.out.print("Hit return to continue ");
+		sc.nextLine();
 		Mastermind m = new Mastermind(); // constructor for Mastermind
+		System.out.println("\nComputer have randomly generated one combanation of six numbers without repeating colors.");
+		System.out.println("Now, it is your turn to guess the combanation\n");
+		System.out.print("Hit return to continue ");
+		sc.nextLine();
 		while (true) { // start of while loop
 			// gathers user input
 			ArrayList<Character> user_choice = new ArrayList<>();
