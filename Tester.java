@@ -19,7 +19,7 @@ public class Tester {
 		System.out.println("After your each guess,");
 		System.out.println("you will get a hint of how many of your inputs are in the right location");
 		System.out.println("and how many of them are not in the right location but in the answer.");
-		System.out.println("With these clues, you can get the answer without taking forever.");
+		System.out.println("With these clues, you needed to get the correct answer in 12 guesses.");
 		System.out.println("ENJOY YOUR GAME\n");
 		System.out.print("Hit return to continue ");
 		sc.nextLine();
